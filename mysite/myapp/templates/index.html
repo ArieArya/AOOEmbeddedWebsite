@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="YogaTech">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>YogaTech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+
+  <!-- avoid favico requests-->
+  <link rel="icon" href="data:,">
+  
+  <!-- Use the Raleway font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- W3 animation -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="width:100%;border:5px black;">
+    <div class="container">
+      <a class="navbar-brand ordinary-text" href="/">YogaTech</a>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+      <div class="intro-pos-text-1">
+        <h1 class="my-4 intro-text-1" style="color:#52d174">
+          YogaTech: <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='["a yoga instructor.", "an IoT tool."]'
+            style="color:#c5e6ce"></span>
+        </h1>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One -->
+        <div class="carousel-item active bg-img-1">
+          <div class="overlay carousel-item-img"></div>
+          <div class="carousel-caption d-md-block">
+            <h3 class="intro-text-3">Slide 1</h3>
+            <p class="intro-text-4">Some description of slide here</p>
+          </div>
+        </div>
+        <!-- Slide Two -->
+        <div class="carousel-item bg-img-2">
+          <div class="overlay carousel-item-img"></div>
+          <div class="carousel-caption d-md-block">
+            <h3 class="intro-text-3">Slide 2</h3>
+            <p class="intro-text-4">Some description of slide here</p>
+          </div>
+        </div>
+        <!-- Slide Three -->
+        <div class="carousel-item bg-img-3">
+          <div class="overlay carousel-item-img"></div>
+          <div class="carousel-caption d-md-block">
+            <h3 class="intro-text-3">Slide 3</h3>
+            <p class="intro-text-4">Some description of slide here</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container" data-aos="fade-up">
+    <p style="margin-bottom: 2cm"></p>
+    <!-- Message Box -->
+    <h1 class="my-4 font-1">
+      <center> Some intro here!
+    </h1>
+    <div class="box-medium">
+      <p class="ordinary-text" style="text-align:justify;text-align:center;">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+    </div>
+    <p style="margin-bottom: 1cm"></p>
+    <div class="box-medium video-box">
+      <video controls id="vid">
+        <source src="/static/video/temp_video.mp4" type="video/mp4">
+        This is fallback content to display for user agents that do not support the video tag.
+      </video>
+    </div>
+    
+  </div>
+
+  <p style="margin-bottom: 2.5cm"></p>
+  <!-- About Me -->
+  <div id="colored-bg" data-aos="fade-up">
+    <h1 class="my-4 font-1">
+      <center>Some intro here!</center>
+    </h1>
+    <div class="box-medium">
+      <p class="ordinary-text" style="text-align:justify;text-align:center;">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+    </div>
+  </div>
+  <p style="margin-bottom: 2.5cm"></p>
+
+  <div class="container">
+    <!-- Portfolio Section -->
+    <div id="project-list">
+      <h2 class="my-4 font-2"><center>Link to Additional Page</h2>
+      <p style="margin-bottom: 1cm"></p>  
+      <div class="row box-large">
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+          <div class="card h-100">
+            <a href="/card1"><img class="card-img-top card-img-size" src="/static/img/bg-img1.jpg" alt="bg-img1"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/card1" class="project-hyperlink font-3"><center>How it Works</a>
+              </h4>
+              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+          <div class="card h-100">
+            <a href="/card2"><img class="card-img-top card-img-size" src="/static/img/bg-img2.jpg" alt="bg-img2"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/card2" class="project-hyperlink font-3"><center>Meet the Team</a>
+              </h4>
+              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+          <div class="card h-100">
+            <a href="/card3"><img class="card-img-top card-img-size" src="/static/img/bg-img3.jpg" alt="bg-img3"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/card3" class="project-hyperlink font-3"><center>Further Reading</a>
+              </h4>
+              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+          </div>
+        </div>
+      <!-- /.row -->
+    </div> 
+  <!-- /.container -->
+  </div>
+
+  <p style="margin-bottom: 2cm"></p>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white ordinary-text">Copyright &copy; AOOEmbed 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Load AOS animator -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+
+</html>

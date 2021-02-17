@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>YogaTech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+
+  <!-- avoid favico requests-->
+  <link rel="icon" href="data:,">
+
+  <!-- Use the Raleway font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- W3 animation -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="width:100%;border:5px black;">
+    <div class="container">
+      <a class="navbar-brand ordinary-text" href="/">YogaTech</a>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active bg-img-1" style="height: 70vh">
+          <div class="overlay" style="filter:brightness(60%); z-index: 200; width: 100%; height: 100%; background-color: #000; opacity: 0.5;"></div>
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+    <p style="margin-bottom: 2cm"></p>
+    <!-- Intro -->
+    <div id="intro" data-aos="fade-up">
+      <h1 class="my-4 font-1">
+        <center> How it Works </center>
+      </h1>
+      <div style="width:80%;margin:auto;">
+        <p style="margin-bottom: 1.5cm"></p>
+        <h4>
+          <center class="font-3" style="text-decoration: underline;">Sorry! This page is still being built. Please check back very soon.</center>
+        </h4>
+        <div class="back-to-home-page">
+          <center><a href="/" class="btn-learn-more btn-block btn btn-homepage">Back to home</a></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-bottom: 2cm"></p>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white ordinary-text">Copyright &copy; AOOEmbed 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+  <!-- Load AOS animator -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+
+</html>

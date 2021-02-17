@@ -1,0 +1,501 @@
+        html,
+        body {
+            font-family: 'Raleway', sans-serif !important;
+        }
+        
+        body {
+            padding-top: 5vh;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Raleway', sans-serif !important;
+        }
+        
+        .card-text {
+            text-align: justify;
+        }
+        
+        .container {
+            margin: 0 auto;
+            max-width: 100vw;
+            font-size: 1.1rem;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .box-small {
+            width: 45%;
+            margin: auto;
+        }
+        
+        .box-medium {
+            width: 60%;
+            margin: auto;
+        }
+        
+        .box-large {
+            width: 80%;
+            margin: auto;
+        }
+        
+        div#colored-bg {
+            width: 100%;
+            height: auto;
+            background-color: #3d444a;
+            padding-bottom: 90px;
+            padding-top: 70px;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .intro-pos-text-1 {
+            float: left;
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            z-index: 2;
+        }
+        
+        .intro-text-1 {
+            color: white;
+            font-size: 4.2rem;
+        }
+        
+        .intro-text-2 {
+            color: #dcebf5;
+            font-size: 1.5rem;
+            max-width: 89.5vw;
+        }
+        
+        .intro-text-3 {
+            color: white;
+            font-size: 1.8rem
+        }
+        
+        .intro-text-4 {
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        #hidden-character {
+            visibility: visible;
+        }
+        
+        .bg-img-1,
+        .bg-img-2,
+        .bg-img-3 {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 96vh;
+        }
+        
+        .bg-img-1 {
+            background-image: url('/static/img/bg-img1.jpg');
+        }
+        
+        .bg-img-2 {
+            background-image: url('/static/img/bg-img2.jpg');
+        }
+        
+        .bg-img-3 {
+            background-image: url('/static/img/bg-img3.jpg');
+        }
+        
+        .bg-other-pages,
+        .carousel-item-img {
+            filter: brightness(100%);
+            z-index: 200;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.6;
+        }
+        
+        .card-img-size {
+            height: 28vh;
+            object-fit: cover;
+        }
+        
+        .contact-icon {
+            opacity: 0.6;
+            padding-left: 15px;
+            display: inline-block;
+            width: 42px;
+            margin: 0px;
+            transition: opacity 0.3s;
+            margin-top: 5px;
+        }
+        
+        .contact-icon:hover {
+            opacity: 0.9;
+        }
+        
+        .contact-icon img {
+            padding: 5px;
+        }
+        
+        .project-hyperlink {
+            color: #58a378;
+            text-decoration: none;
+        }
+        
+        .project-hyperlink:hover {
+            color: #26613f;
+            text-decoration: none;
+        }
+        
+        .btn-learn-more {
+            background-color: #187996;
+        }
+        
+        .btn-learn-more:hover {
+            background-color: #124359;
+        }
+        
+        .ordinary-text {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .font-1 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        
+        .font-2 {
+            color: black;
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+        
+        .font-3 {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+        
+        .font-4 {
+            font-size: 1.4rem;
+        }
+        
+        .back-to-home-page {
+            height: 6vh;
+            width: 17vh;
+            margin: auto;
+            margin-top: 2vh;
+            text-decoration: none;
+        }
+        
+        .btn-homepage {
+            border-radius: 15px;
+            width: 100%;
+            color: white !important;
+            text-align: center;
+            font-size: 1.3rem;
+            height: 100%;
+            padding: 10px;
+        }
+        
+        .navbar-brand {
+            margin-left: 4.3%;
+            margin-right: 0;
+        }
+        
+        .card-header {
+            margin-block-start: 0px;
+        }
+        
+        .video-box {
+            margin: 0 auto;
+        }
+        
+        #vid {
+            width: 735px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block
+        }
+        
+        #top-most-navbar {
+            min-height: 5vh;
+        }
+        
+        @media only screen and (max-width: 991px) {
+            .contact-icon {
+                padding-left: 10px;
+                display: inline-block;
+                width: 38px;
+                margin: 0px;
+                margin-bottom: 8.5px;
+            }
+            .icon-list {
+                display: inline;
+            }
+            div#navbarResponsive {
+                margin-left: 4.3%;
+                margin-right: 0px;
+            }
+            #vid {
+                width: 600px;
+            }
+        }
+        
+        @media only screen and (max-width: 780px) {
+            #vid {
+                width: 500px;
+            }
+        }
+        
+        @media only screen and (max-width: 650px) {
+            #vid {
+                width: 400px;
+            }
+        }
+        
+        @media only screen and (max-width: 450px) {
+            #vid {
+                width: 350px;
+            }
+        }
+        
+        @media only screen and (max-width: 370px) {
+            #vid {
+                width: 320px;
+            }
+        }
+        
+        @media only screen and (max-width: 1050px) and (min-width: 601px) {
+            .box-small,
+            .box-medium,
+            .box-large {
+                width: 80%;
+            }
+            .bg-img-1 {
+                background-position: 30%;
+            }
+            .bg-img-2 {
+                background-position: 20%;
+            }
+            .bg-img-3 {
+                background-position: 80%;
+            }
+            .intro-text-1 {
+                font-size: 3.8rem;
+            }
+            .intro-text-2 {
+                font-size: 1.3rem;
+            }
+            .intro-text-3 {
+                font-size: 1.5rem
+            }
+            .intro-text-4 {
+                font-size: 1rem;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) and (min-width:520px) {
+            .intro-text-2 {
+                max-width: 60vw;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .carousel-item-img {
+                opacity: 0.7;
+            }
+            .box-small,
+            .box-medium,
+            .box-large {
+                width: 95%;
+            }
+            .intro-pos-text-1 {
+                top: 5%;
+                left: 3%;
+            }
+            .intro-text-1 {
+                font-size: 2rem;
+            }
+            .intro-text-2 {
+                font-size: 1rem;
+            }
+            .intro-text-3 {
+                font-size: 1.3rem;
+            }
+            .intro-text-4 {
+                font-size: 0.9rem;
+            }
+            .bg-other-pages {
+                background: no-repeat fixed;
+                background-position: center 0;
+            }
+            .ordinary-text {
+                font-size: 1rem;
+            }
+            .font-1 {
+                font-size: 2rem;
+            }
+            .font-2 {
+                font-size: 1.5rem;
+            }
+            .font-3 {
+                font-size: 1.2rem;
+            }
+            .font-4 {
+                font-size: 1rem;
+            }
+            .back-to-home-page {
+                height: 50px;
+                width: 240px;
+            }
+            div.col-lg-4.mb-4 {
+                padding: 0;
+            }
+            div.col-lg-4.col-sm-6.portfolio-item {
+                padding: 0;
+            }
+            .bg-other-pages {
+                height: 500px;
+            }
+            .navbar-brand {
+                margin-left: 3%;
+            }
+            .navbar {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .my-4 {
+                margin-top: 1.1rem !important;
+            }
+            .nav-link {
+                padding-right: 8px !important;
+                padding-left: 8px !important;
+            }
+            #hidden-character {
+                visibility: hidden;
+            }
+            .icon-list {
+                display: inline;
+            }
+            div#navbarResponsive {
+                margin-left: 3%;
+                margin-right: 0px;
+            }
+        }
+        
+        @media only screen and (max-width: 330px) {
+            .intro-pos-text-1 {
+                top: 5%;
+                left: 3%;
+            }
+            .intro-text-1 {
+                font-size: 1.4rem;
+            }
+            .intro-text-2 {
+                font-size: 0.8rem;
+            }
+            .intro-text-3 {
+                font-size: 1.1rem;
+            }
+            .intro-text-4 {
+                font-size: 0.7rem;
+            }
+            .ordinary-text {
+                font-size: 0.8rem !important;
+            }
+            .font-1 {
+                font-size: 1.6rem;
+            }
+            .font-2 {
+                font-size: 1.3rem;
+            }
+            .font-3 {
+                font-size: 1.1rem;
+            }
+            .font-4 {
+                font-size: 0.95rem;
+            }
+            .contact-icon {
+                width: 30px;
+                margin-top: 3.3px;
+            }
+        }
+        
+        .csstransforms3d .books {
+            -moz-perspective: 100px;
+            -moz-transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+        }
+        
+        .csstransforms3d .book {
+            position: relative;
+            -moz-perspective: 100px;
+            -moz-transform: rotateY(-3deg);
+            -webkit-transform: perspective(100) rotateY(-3deg);
+            outline: 1px solid transparent;
+            /* Helps smooth jagged edges in Firefox */
+            box-shadow: none;
+            margin: 0;
+        }
+        
+        .csstransforms3d .book img {
+            position: relative;
+            max-width: 100%;
+        }
+        
+        .csstransforms3d .book:before,
+        .csstransforms3d .book:after {
+            position: absolute;
+            top: 2%;
+            height: 96%;
+            content: ' ';
+            z-index: -1;
+        }
+        
+        .csstransforms3d .book:before {
+            width: 100%;
+            left: 7.5%;
+            background-color: #5a2d18;
+            box-shadow: 5px 5px 20px #333;
+        }
+        
+        .csstransforms3d .book:after {
+            width: 5%;
+            left: 100%;
+            background-color: #EFEFEF;
+            box-shadow: inset 0px 0px 5px #aaa;
+            -moz-transform: rotateY(20deg);
+            -webkit-transform: perspective(100) rotateY(20deg);
+        }
+        
+        .csstransforms3d #book1:before {
+            background-color: #090026;
+        }
+        
+        .csstransforms3d #book2:before {
+            background-color: #a19e7c;
+        }
+        
+        .csstransforms3d #book3:before {
+            background-color: #09244f;
+        }
+        
+        h1,
+        h2 {
+            font-weight: 200;
+            margin: 0.4em 0;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+        }
+        
+        h2 {
+            color: #888;
+            font-size: 2em;
+        }
