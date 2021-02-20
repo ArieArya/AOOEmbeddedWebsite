@@ -89,6 +89,10 @@
             padding: 5px 15px 5px 15px;
         }
         
+        .github-class img:hover {
+            transform: scale(1.2) !important;
+        }
+        
         .languages-icon {
             max-height: 7vh;
             padding: 5px 15px 5px 15px;
