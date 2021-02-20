@@ -44,9 +44,10 @@
 
 <body>
   <!-- Navigation -->
-  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="width:100%;border:5px black;">
+  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="width:100%;border:5px black;background-image: linear-gradient(180deg, #F8F8F8, #e3e1e1)">
     <div class="container">
-      <a class="navbar-brand ordinary-text" href="/">YogaTech</a>
+      <a class="navbar-brand ordinary-text navbar-font" href="/">YogaTech.</a>
+      <a class="navbar-home" href="/"><img class="home-img" src="/static/img/home.PNG" alt="home"></a>
     </div>
   </nav>
 
@@ -68,25 +69,86 @@
     <!-- Intro -->
     <div id="intro" data-aos="fade-up">
       <h1 class="my-4 font-1">
-        <center> Meet the Team </center>
+        <center> How it works </center>
       </h1>
-      <div style="width:80%;margin:auto;">
-        <p style="margin-bottom: 1.5cm"></p>
-        <h4>
-          <center class="font-3" style="text-decoration: underline;">Sorry! This page is still being built. Please check back very soon.</center>
-        </h4>
-        <div class="back-to-home-page">
-          <center><a href="/" class="btn-learn-more btn-block btn btn-homepage">Back to home</a></center>
-        </div>
+      <div class="box-medium-large ordinary-text" style="text-align:justify;">
+        YogaTech is built using the latest Raspberry-Pi Zero with a 1GHz single-core CPU. By designing the platform and software with multi-threading and concurrency in mind, a far
+        improved efficiency is achieved that enables real-time signal processing and live audio feedback. In addition, the Adafruit LIS3DH accelerometer is used to achieve accurate
+        motion tracking of your yoga poses - which is then compared to optimal expert poses to assess your performance and give immediate personalized feedback.
       </div>
     </div>
+
+    <p style="margin-bottom: 1.5cm"></p>
+    <div class="box-medium-large ordinary-text" style="text-align:justify;" data-aos="fade-up">
+      <h4>
+        <center class="font-2">Tools and Libraries</center>
+      </h4>
+      <p style="margin-bottom: 1cm"></p>  
+      <p>
+        The main high-level language used in the platform is Python, which runs on the Raspberry-Pi Zero along with its various libraries; the most crucial of which includes
+        NumPy for matrix processing, JSON to encapsulate data to transfer via MQTT, Tkinter for the main UI, and Matplotlib to display your performance throughout the session.
+        The three main building blocks of the device include: <b>Motion Tracking and Analysis, MQTT messaging protocol, and the Real-time audio feedback</b>.
+      </p>
+      <p style="margin-bottom: 1cm"></p> 
+      <div style="text-align:center;">
+        <img src="/static/img/languages/raspberry_pi.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="100">
+        <img src="/static/img/languages/python.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="200">
+        <img src="/static/img/languages/mqtt.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="300">
+        <img src="/static/img/languages/numpy.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="400">
+        <img src="/static/img/languages/json.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="500">
+        <img src="/static/img/languages/tkinter.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="600">
+        <img src="/static/img/languages/matplotlib.jpg" class="languages-icon" data-aos="fade-up" data-aos-delay="700">
+      </div>
+    </div>
+
+    <p style="margin-bottom: 2cm"></p>
+    <div data-aos="fade-up">
+      <div class="row box-medium-large">
+        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="my-4 font-3"> Motion Tracking and Analysis </h2>
+          <p class="card-text ordinary-text">
+            Through the triple-axis Adafruit LIS3DH accelerometer, our device is able to achieve accurate motion tracking of your yoga poses. After careful data pre-processing, we turn the raw 
+            accelerometer data from cartesian to polar coordinates to compare your performance to ideal positions of the specific pose you selected. This will then be sent back to your mobile
+            device via the MQTT protocol to give you live feedback of your performance.
+          </p>
+        </div>
+        <div id="col-img-8" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000"></div>
+      </div>
+
+      <p style="margin-bottom: 0.7cm"></p>
+      <div class="row box-medium-large col-reverse">
+        <div id="col-img-9" class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"></div>
+        <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+          <h2 class="my-4 font-3"> MQTT Lightweight Messaging Protocol </h2>
+          <p class="card-text ordinary-text">
+            The MQTT lightweight messaging protocol over SSL is a versatile protocol used in various IoT applications, allowing your mobile phone to communicate with our device at a high
+            bandwidth. Moreover, through the use of client certificates and the MQTT publish and subscribe mechanism, the communication between your mobile phone and our device 
+            will be both efficient and secure.
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-bottom: 0.7cm"></p>
+      <div class="row box-medium-large">
+        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+          <h2 class="my-4 font-3"> Real-time Audio Feedback </h2>
+          <p class="card-text ordinary-text">
+            The data accumulated through the LIS3DH accelerometer will be pre-processed and sent periodically to your mobile device via the MQTT protocol. Using this data, we are able
+            to track your overall performance and give on-the-spot feedback on how you can improve your pose. In addition, after your session is completed, a final overall feedback and score
+            will be given to allow you to improve in future yoga sessions.
+          </p>
+        </div>
+        <div id="col-img-10" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"></div>
+      </div>
+    </div>
+
   </div>
 
   <p style="margin-bottom: 2cm"></p>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-light">
     <div class="container">
-      <p class="m-0 text-center text-white ordinary-text">Copyright &copy; AOOEmbed 2021 </p>
+      <p class="m-0 text-center ordinary-text">Copyright &copy; AOOEmbed 2021 </p>
     </div>
     <!-- /.container -->
   </footer>

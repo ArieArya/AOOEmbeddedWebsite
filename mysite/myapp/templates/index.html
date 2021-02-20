@@ -43,23 +43,15 @@
 
 <body>
   <!-- Navigation -->
-  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="width:100%;border:5px black;">
+  <nav id="top-most-navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="width:100%;border:5px black;background-image: linear-gradient(180deg, #F8F8F8, #e3e1e1)">
     <div class="container">
-      <a class="navbar-brand ordinary-text" href="/">YogaTech</a>
+      <a class="navbar-brand ordinary-text navbar-font" href="/">YogaTech.</a>
+      <a class="navbar-home" href="/"><img class="home-img" src="/static/img/home.PNG" alt="home"></a>
     </div>
   </nav>
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
-      <div class="intro-pos-text-1">
-        <h1 class="my-4 intro-text-1" style="color:#52d174">
-          YogaTech: <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='["a yoga instructor.", "an IoT tool."]'
-            style="color:#c5e6ce"></span>
-        </h1>
-      </div>
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -70,24 +62,21 @@
         <div class="carousel-item active bg-img-1">
           <div class="overlay carousel-item-img"></div>
           <div class="carousel-caption d-md-block">
-            <h3 class="intro-text-3">Slide 1</h3>
-            <p class="intro-text-4">Some description of slide here</p>
+            <h3 class="intro-text-3">Revive your spirit</h3>
           </div>
         </div>
         <!-- Slide Two -->
         <div class="carousel-item bg-img-2">
           <div class="overlay carousel-item-img"></div>
           <div class="carousel-caption d-md-block">
-            <h3 class="intro-text-3">Slide 2</h3>
-            <p class="intro-text-4">Some description of slide here</p>
+            <h3 class="intro-text-3">Live life to the fullest</h3>
           </div>
         </div>
         <!-- Slide Three -->
         <div class="carousel-item bg-img-3">
           <div class="overlay carousel-item-img"></div>
           <div class="carousel-caption d-md-block">
-            <h3 class="intro-text-3">Slide 3</h3>
-            <p class="intro-text-4">Some description of slide here</p>
+            <h3 class="intro-text-3">Discover yourself, discover yoga</h3>
           </div>
         </div>
       </div>
@@ -107,83 +96,119 @@
     <p style="margin-bottom: 2cm"></p>
     <!-- Message Box -->
     <h1 class="my-4 font-1">
-      <center> Some intro here!
+      <center> YogaTech.
     </h1>
-    <div class="box-medium">
-      <p class="ordinary-text" style="text-align:justify;text-align:center;">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      </p>
-    </div>
     <p style="margin-bottom: 1cm"></p>
-    <div class="box-medium video-box">
+    <div class="box-small video-box">
+      <p class="ordinary-text" style="text-align:justify;">
+        Introducing YogaTech, a personal IoT Yoga instructor made to help you live life to the fullest through the art of Yoga. Its state of the art
+        technology and real-time signal processing and voice instructor will guide you from a beginner to an expert in the comfort of your own home. We believe now, 
+        more than ever, that a calm mind and spirit will guide us through these unprecedented pandemic times.
+      </p>
+      <p style="margin-bottom: 0.5cm"></p>
       <video controls id="vid">
         <source src="/static/video/temp_video.mp4" type="video/mp4">
-        This is fallback content to display for user agents that do not support the video tag.
+        Fallback...
       </video>
     </div>
     
   </div>
 
   <p style="margin-bottom: 2.5cm"></p>
-  <!-- About Me -->
   <div id="colored-bg" data-aos="fade-up">
-    <h1 class="my-4 font-1">
-      <center>Some intro here!</center>
-    </h1>
-    <div class="box-medium">
-      <p class="ordinary-text" style="text-align:justify;text-align:center;">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      </p>
+    <div class="row box-medium-large">
+      <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+        <h2 class="my-4 font-3"> Extraordinary Performance </h2>
+        <p class="card-text ordinary-text">
+          Powered by the latest Raspberry-Pi Zero with a 1GHz single-core CPU, YogaTech utilizes efficient multi-threading and concurrency to provide real-time signal processing 
+          and live audio feedback to you. Its powerful LIS3DH accelerometer is able to accurately trace your position and produce analytics of your performance that
+          has been verified by industry experts. Further, by integrating our platform to mobile devices, you are able to carry the device wherever you'd like, whenever you'd like - 
+          so that you may take a break from the world around you and calm your mind. By giving you detailed feedback on your performance through the latest generation technology, 
+          you can soon leap to an expert yogi before you realize it.
+        </p>
+      </div>
+      <div id="col-img-1" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000"></div>
     </div>
+
+    <p style="margin-bottom: 2cm"></p>
+    <div class="row box-medium-large col-reverse">
+      <div id="col-img-2" class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"></div>
+      <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <h2 class="my-4 font-3"> Flexibility and Portability </h2>
+        <p class="card-text ordinary-text">
+          During these unprecedented times amidst the pandemic, more and more people find themselves increasingly isolated without an opportunity to undertake supervised yoga lessons. 
+          However, it seems like now they need it more than ever. This is why YogaTech brings portability and flexibility to our device - allowing yoga to be brought wherever you are, 
+          and whenever you need it. By integrating our IoT platform with mobile devices, you are able to undertake machine-supervised yoga lessons with the highest quality feedback and
+          performance tracking. Wherever you are, at home, in the beach, in the park, in at the office - YogaTech will always be available for you.
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-bottom: 2cm"></p>
+    <div class="row box-medium-large">
+      <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+        <h2 class="my-4 font-3"> The Perfect Yoga Partner </h2>
+        <p class="card-text ordinary-text">
+          Carefully engineered with the latest generation IoT technology and advised by experts in the industry, YogaTech brings about a new disruptive solution to yoga classes in the 
+          increasingly tech-driven age. By bringing expert advises right into your pockets, YogaTech allows you to harness the power of technology to advance your knowledge and performance
+          of the art - and most importantly, bring you all the benefits of yoga anywhere you go and whenever you need it. With live and real-time audio feedback, YogaTech is able to monitor
+          your individual performance and provide immediate personalized feedback - something not available in traditional settings. With this personal yoga trainer, you may take yoga classes at your own
+          pace, knowing that an expert is there by your side at all times.
+        </p>
+      </div>
+      <div id="col-img-3" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"></div>
+    </div>
+
   </div>
-  <p style="margin-bottom: 2.5cm"></p>
+  <p style="margin-bottom: 2cm"></p>
 
   <div class="container">
-    <!-- Portfolio Section -->
     <div id="project-list">
-      <h2 class="my-4 font-2"><center>Link to Additional Page</h2>
-      <p style="margin-bottom: 1cm"></p>  
+      <h2 class="my-4 font-2"><center>Learn More</h2>
+      <p style="margin-bottom: 1.5cm"></p>  
       <div class="row box-large">
-        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="500">
           <div class="card h-100">
-            <a href="/card1"><img class="card-img-top card-img-size" src="/static/img/bg-img1.jpg" alt="bg-img1"></a>
+            <a href="/card1"><img class="card-img-top card-img-size" src="/static/img/yoga_bg.jpeg" alt="bg-img1"></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="/card1" class="project-hyperlink font-3"><center>How it Works</a>
+                <a href="/card1" class="project-hyperlink font-3"><center>How it can help you</a>
               </h4>
-              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <p class="card-text ordinary-text">
+                YogaTech is designed to help both beginners and experts excel in the art of Yoga. In the current age of the pandemic, more and more young people are looking towards yoga
+                as a way to escape the stress of every day life. As scheduled yoga sessions with experts have become increasingly limited, YogaTech provides the perfect solution to bring
+                yoga right into your pockets - wherever you may be.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
           <div class="card h-100">
-            <a href="/card2"><img class="card-img-top card-img-size" src="/static/img/bg-img2.jpg" alt="bg-img2"></a>
+            <a href="/card2"><img class="card-img-top card-img-size" src="/static/img/raspberry_pi_bg.jpg" alt="bg-img2"></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="/card2" class="project-hyperlink font-3"><center>Meet the Team</a>
+                <a href="/card2" class="project-hyperlink font-3"><center>How it works</a>
               </h4>
-              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <p class="card-text ordinary-text">
+                Powered by the latest Raspberry-Pi Zero with a 1GHz single-core CPU, YogaTech utilizes efficient multi-threading to achieve real-time signal processing and 
+                live audio feedback whilst being compact enough to fit into your pockets. By strapping our device to your back and accessing our app through your phone, you
+                are able to track and monitor your yoga performance whilst listening to live expert feedback.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
+        <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
           <div class="card h-100">
-            <a href="/card3"><img class="card-img-top card-img-size" src="/static/img/bg-img3.jpg" alt="bg-img3"></a>
+            <a href="/card3"><img class="card-img-top card-img-size" src="/static/img/beach.jpg" alt="bg-img3"></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="/card3" class="project-hyperlink font-3"><center>Further Reading</a>
               </h4>
-              <p class="card-text ordinary-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <p class="card-text ordinary-text">
+                YogaTech brings a new disruptive approach to the art of yoga. From its advanced features and real-time signal processing, learners obtain personalized feedback 
+                to improve their performance in the art. As more and more young people look to yoga as a way to escape the stress of every day life, YogaTech brings them the 
+                opportunity to practice at their own pace, wherever they may be.
+              </p>
             </div>
           </div>
         </div>
@@ -194,9 +219,9 @@
 
   <p style="margin-bottom: 2cm"></p>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-light">
     <div class="container">
-      <p class="m-0 text-center text-white ordinary-text">Copyright &copy; AOOEmbed 2021</p>
+      <p class="m-0 text-center ordinary-text">Copyright &copy; AOOEmbed 2021</p>
     </div>
     <!-- /.container -->
   </footer>
