@@ -71,14 +71,21 @@
       <h1 class="my-4 font-1">
         <center> How it works </center>
       </h1>
-      <div class="box-medium-large ordinary-text" style="text-align:justify;">
+      <div class="box-small video-box ordinary-text" style="text-align:justify;">
         YogiTrainer is built using the latest Raspberry-Pi Zero with a 1GHz single-core CPU. By designing the platform and software with multi-threading and concurrency in mind, a far
         improved efficiency is achieved that enables real-time signal processing and live audio feedback. In addition, the Adafruit LIS3DH accelerometer is used to achieve accurate
-        motion tracking of your yoga poses - which is then compared to optimal expert poses to assess your performance and give immediate personalized feedback.
+        motion tracking of your yoga poses - which is then compared to optimal expert poses to assess your performance and give immediate personalized feedback. Please observe the <b>demo
+        video of our prototype</b> below.
+        <p style="margin-bottom: 0.5cm"></p>
+        <video controls id="vid">
+          <source src="/static/video/demo_video.mp4" type="video/mp4">
+          Fallback...
+        </video>
       </div>
+      
     </div>
 
-    <p style="margin-bottom: 1.5cm"></p>
+    <p style="margin-bottom: 15vh"></p>
     <div class="box-medium-large ordinary-text" style="text-align:justify;" data-aos="fade-up">
       <h4>
         <center class="font-2">Tools and Libraries</center>
@@ -87,7 +94,7 @@
       <p>
         The main high-level language used in the platform is Python, which runs on the Raspberry-Pi Zero along with its various libraries; the most crucial of which includes
         NumPy for matrix processing, JSON to encapsulate data to transfer via MQTT, Tkinter for the main UI, and Matplotlib to display your performance throughout the session.
-        The three main building blocks of the device include: <b>Motion Tracking and Analysis, MQTT messaging protocol, and the Real-time audio feedback</b>.
+        The four main building blocks of the device include: <b>Motion Tracking and Analysis, MQTT messaging protocol, Real-time audio feedback, and Performance Tracking</b>.
       </p>
       <p style="margin-bottom: 1cm"></p> 
       <div style="text-align:center;">
@@ -147,7 +154,7 @@
         <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
           <h2 class="my-4 font-3"> Tracking Your Past Performance </h2>
           <p class="card-text ordinary-text">
-            Your past performances will be tracked and stored in the device for you to monitor your progress. By following our expert live feedback, you will gradually improve your performance
+            Your past performances will be tracked and stored in the Pi for you to constantly monitor your progress. By following our expert live feedback, you will gradually improve your performance
             throughout the various practice sessions. Your historical performance data can also be used to show your main areas of weaknesses in the specific poses you select, which can be a 
             springboard to improving yourself during your next yoga session.
           </p>
