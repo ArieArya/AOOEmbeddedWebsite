@@ -333,7 +333,9 @@
         }
         
         #top-most-navbar {
+            width: 100vw;
             min-height: 5vh;
+            border: none !important;
         }
         
         @media only screen and (max-height: 830px) {
@@ -521,7 +523,7 @@
                 width: 30px;
             }
             .navbar-home {
-                padding-right: 30px;
+                padding-right: 15px;
             }
             .back-to-home-page {
                 height: 50px;
@@ -575,7 +577,7 @@
             #col-img-8,
             #col-img-9,
             #col-img-10 {
-                height: 10vh;
+                height: 30vh;
             }
             .intro-pos-text-1 {
                 top: 5%;
@@ -615,7 +617,7 @@
                 width: 23px;
             }
             .navbar-home {
-                padding-right: 18px;
+                padding-right: 10px;
             }
             .contact-icon {
                 width: 30px;
