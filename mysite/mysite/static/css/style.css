@@ -73,6 +73,11 @@
             background: url('/static/img/time.jpg') no-repeat center center;
         }
         
+        #col-img-11 {
+            height: 41vh;
+            background: url('/static/img/graph.jpg') no-repeat center center;
+        }
+        
         .home-img {
             width: 37px;
         }
@@ -349,7 +354,8 @@
             #col-img-7,
             #col-img-8,
             #col-img-9,
-            #col-img-10 {
+            #col-img-10,
+            #col-img-11 {
                 height: 52vh;
             }
         }
@@ -364,7 +370,8 @@
             #col-img-7,
             #col-img-8,
             #col-img-9,
-            #col-img-10 {
+            #col-img-10,
+            #col-img-11 {
                 height: 60vh;
             }
         }
@@ -379,7 +386,8 @@
             #col-img-7,
             #col-img-8,
             #col-img-9,
-            #col-img-10 {
+            #col-img-10,
+            #col-img-11 {
                 height: 70vh;
             }
         }
@@ -470,7 +478,8 @@
             #col-img-7,
             #col-img-8,
             #col-img-9,
-            #col-img-10 {
+            #col-img-10,
+            #col-img-11 {
                 height: 20vh;
             }
             .carousel-item-img {
@@ -577,7 +586,8 @@
             #col-img-7,
             #col-img-8,
             #col-img-9,
-            #col-img-10 {
+            #col-img-10,
+            #col-img-11 {
                 height: 30vh;
             }
             .intro-pos-text-1 {
