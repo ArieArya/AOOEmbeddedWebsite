@@ -328,6 +328,10 @@
             display: block
         }
         
+        #vid:focus {
+            outline: none;
+        }
+        
         #top-most-navbar {
             min-height: 5vh;
         }
