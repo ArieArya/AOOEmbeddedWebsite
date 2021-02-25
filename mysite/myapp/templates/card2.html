@@ -139,9 +139,9 @@
       <p style="margin-bottom: 0.7cm"></p>
       <div class="row box-medium-large">
         <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
-          <h2 class="my-4 font-3"> Low Pass Filter and Compression </h2>
+          <h2 class="my-4 font-3"> Low Pass Filtering and Compression </h2>
           <p class="card-text ordinary-text">
-            The sensor data coming from the LIS3DH accelerometer is sampled at a rate of 1Hz and can typically be extremely noisy. As a result, we pre-process the data through a 
+            The sensor data coming from the LIS3DH accelerometer is sampled at a rate of 10Hz and can typically be extremely noisy. As a result, we pre-process the data through a 
             low-pass filter (LPF) by using an exponential moving average (EMA) function. After performing low-pass filtering on our sensor data, we perform efficient compression of 
             our data before it is communicated back to your local device via MQTT.
           </p>
