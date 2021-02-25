@@ -94,7 +94,8 @@
       <p>
         The main high-level language used in the platform is Python, which runs on the Raspberry-Pi Zero along with its various libraries; the most crucial of which includes
         NumPy for matrix processing, JSON to encapsulate data to transfer via MQTT, Tkinter for the main UI, and Matplotlib to display your performance throughout the session.
-        The four main building blocks of the device include: <b>Motion Tracking and Analysis, MQTT messaging protocol, Real-time audio feedback, and Performance Tracking</b>.
+        The five main building blocks of the device include: <b>Motion Tracking and Analysis, MQTT messaging protocol, Low Pass Filtering (LPF) and Compression, Real-time audio feedback, 
+        and Performance Tracking</b>.
       </p>
       <p style="margin-bottom: 1cm"></p> 
       <div style="text-align:center;">
@@ -138,6 +139,20 @@
       <p style="margin-bottom: 0.7cm"></p>
       <div class="row box-medium-large">
         <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+          <h2 class="my-4 font-3"> Low Pass Filter and Compression </h2>
+          <p class="card-text ordinary-text">
+            The sensor data coming from the LIS3DH accelerometer is sampled at a rate of 1Hz and can typically be extremely noisy. As a result, we pre-process the data through a 
+            low-pass filter (LPF) by using an exponential moving average (EMA) function. After performing low-pass filtering on our sensor data, we perform efficient compression of 
+            our data before it is communicated back to your local device via MQTT.
+          </p>
+        </div>
+        <div id="col-img-12" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"></div>
+      </div>
+
+      <p style="margin-bottom: 0.7cm"></p>
+      <div class="row box-medium-large col-reverse">
+        <div id="col-img-10" class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700"></div>
+        <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
           <h2 class="my-4 font-3"> Real-time Audio Feedback </h2>
           <p class="card-text ordinary-text">
             The data accumulated through the LIS3DH accelerometer will be pre-processed and sent periodically to your mobile device via the MQTT protocol. Using this data, we are able
@@ -145,13 +160,11 @@
             will be given to allow you to improve in future yoga sessions.
           </p>
         </div>
-        <div id="col-img-10" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"></div>
       </div>
 
       <p style="margin-bottom: 0.7cm"></p>
-      <div class="row box-medium-large col-reverse">
-        <div id="col-img-11" class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700"></div>
-        <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+      <div class="row box-medium-large">
+        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
           <h2 class="my-4 font-3"> Tracking Your Past Performance </h2>
           <p class="card-text ordinary-text">
             Your past performances will be tracked and stored in the Pi for you to constantly monitor your progress. By following our expert live feedback, you will gradually improve your performance
@@ -159,6 +172,7 @@
             springboard to improving yourself during your next yoga session.
           </p>
         </div>
+        <div id="col-img-11" class="col-sm-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"></div>
       </div>
     </div>
 

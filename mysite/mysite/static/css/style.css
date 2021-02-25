@@ -78,6 +78,11 @@
             background: url('/static/img/graph.jpg') no-repeat center center;
         }
         
+        #col-img-12 {
+            height: 41vh;
+            background: url('/static/img/compression.jpg') no-repeat center center;
+        }
+        
         .home-img {
             width: 37px;
         }
@@ -355,7 +360,8 @@
             #col-img-8,
             #col-img-9,
             #col-img-10,
-            #col-img-11 {
+            #col-img-11,
+            #col-img-12 {
                 height: 52vh;
             }
         }
@@ -371,7 +377,8 @@
             #col-img-8,
             #col-img-9,
             #col-img-10,
-            #col-img-11 {
+            #col-img-11,
+            #col-img-12 {
                 height: 60vh;
             }
         }
@@ -387,7 +394,8 @@
             #col-img-8,
             #col-img-9,
             #col-img-10,
-            #col-img-11 {
+            #col-img-11,
+            #col-img-12 {
                 height: 70vh;
             }
         }
@@ -479,7 +487,8 @@
             #col-img-8,
             #col-img-9,
             #col-img-10,
-            #col-img-11 {
+            #col-img-11,
+            #col-img-12 {
                 height: 20vh;
             }
             .carousel-item-img {
@@ -587,7 +596,8 @@
             #col-img-8,
             #col-img-9,
             #col-img-10,
-            #col-img-11 {
+            #col-img-11,
+            #col-img-12 {
                 height: 30vh;
             }
             .intro-pos-text-1 {
